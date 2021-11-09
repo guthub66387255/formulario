@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Formulario</title>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Formulario HTML5 y CSS3"/>
+  <meta name="keywords" content="Form, HTML5, CSS3" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="contenedor">
+    <header>
+      <h1>Crear una cuenta de formulario3:</h1>
+      <p>*Campos obligatorios</p>
+    </header>
+    <section>
+      <article>
+        <form id="formulario" name="formulario" method="post" action="">
+          <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre" ><span>*</span>Nombres(s):</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus nombres" maxlength="40" required autofocus/>
+            <label for="apellidos"><span>*</span>Apellidos(s):</label>
+              <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" maxlength="40" required autofocus/>
+              <label for="edad"><span>*</span>Edad:</label>
+              <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" min="1" max="100" required autofocus/>
+            <label for="sexo"><span>*</span>Sexo:</label>
+              <input type="radio" name="sexo" "value="Masculino" checked/> Masculino
+            <input type="radio" name="sexo" value="Femenino"/> Femenino
+            <label for="pais"><span>*</span>Pais:</label>
+            <select name="pais" id="pais">
+              <option value="-----">---------------------------------</option>
+               <option value="mexico">México</option>
+               <option value="argentina">Argentina</option>
+               <option value="brasil">Brasil</option>
+               <option value="otra">Otra</option>
+            </select>
+            <label for="fecha"><span>*</span>Fecha nacimiento:</label>
+            <input type="date" name="fecha" id="fecha" min="1920-0-01" max="2021-12-12" />
+            
+            <label for="color"><span>*</span>Color favorito:</label>
+            <input type="color" name="color" id="color" />
+            
+            <label for="imagen"><span>*</span>Foto:</label>
+            <input type="file" name="imagen" id="imagen" />
+          </fieldset>
+          
+          <fieldset>
+            <legend>Informacion de la cuenta de correo</legend>
+            <label for="cuenta"><span>*</span>Cuenta:</label>
+            <input type="email" name="cuenta" id="cuenta"placegholder="Nombre de la cuenta" maxlength="100" required autofocus/>
+            <label for="contraseña"><span>*</span>Contraseñas:</label>
+            <input type="password" name="contraseña" placegholder="Ingrese su contraseña" maxlength="50" required autofocus/>
+            <label for="contraseña"><span>*</span>Confirmar:</label>
+            <input type="password" name="contraseña_r" placegholder="Confirme su contraseña" maxlength="50" required autofocus/>
+          </fieldset>
+          
+          <fieldset>
+              <legend>Otros</legend>
+            <label for="preferencias">Preferencias:</label>
+            <input type="checkbox" name="preferencias" id="preferencias" value="Tecnologia"/> Tecnología
+            <input type="checkbox" name="preferencias" id="preferencias" value="Salud"/> Salud
+            <input type="checkbox" name="preferencias" id="preferencias" value="Otra" checked/> Otra
+            
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" rows="3" id="comentarios"placeholder="Ingresa tus comentarios"></textarea>
+            <label></label>
+          <button type="reset">Limpiar</button>
+          <button type=""  id="boton" >Enviar</button>
+		  
+		  
+          </fieldset>   
+
+		<fieldset>
+			<h3>Resultados</h3>
+			<table>
+			  <tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Edad</th>
+				<th>Sexo</th>
+				<th>Pais</th>
+				<th>Fecha</th>
+				<th>Color</th>
+				<th>Foto</th>
+				
+				<th>Cuenta</th>
+				<th>Preferencias</th>
+				<th>Comentarios</th>
+			  </tr>
+			  <tr>
+				<th id="n"></th>
+				<th id="a"></th>
+				<th id="e"></th>
+				<th id="s"></th>
+				<th id="p"></th>
+				<th id="f"></th>
+				<th id="col"></th>
+				<th id="foto"></th>
+				<th id="c"></th>
+				<th id="prefe"></th>
+				<th id="co"></th>
+			  </tr>
+			</table>
+		</fieldset>
+        </form>
+      </article>
+    </section>
+  </div>  
+  
+  
+  
+  
+  
+  
+  <footer>
+    <h2>Visistanos en:</h2>
+    <cite>Todos los derechos reservados</cite>
+    <br/>
+    <cite>
+      <a href="https://www.google.com" title="Formulario de contacto">www.formularios.com</a>
+    </cite>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
